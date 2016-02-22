@@ -1,4 +1,4 @@
-﻿<h1>Grid</h1>
+﻿<h1>CGrid</h1>
 Grid is a simple presenter widget for database queries
 <br/>
 Display results in a HTML Table (defining each column)<br/>
