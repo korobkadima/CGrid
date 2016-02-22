@@ -1,46 +1,46 @@
-<h1>Grid</h1>
+п»ї<h1>Grid</h1>
 DataGrid is a simple presenter widget for database queries
 <br/>
 Display results in a HTML Table (defining each column)<br/>
-Define each column, row, format columm<br/>
+Define each column, row, format column.<br/>
 <br/><br/>
 <h2>Example</h2>
 <br/>
 		
-		require_once($_SERVER['DOCUMENT_ROOT'].'/grid.php'); <br/>
+		require_once($_SERVER['DOCUMENT_ROOT'].'/grid.php'); 
 	
-		function formatid($id,$arr)<br/>
-		{<br/>
-			return 'ID:' . $id;<br/>
-		}<br/>
+		function formatid($id,$arr)
+		{
+			return 'ID:' . $id;
+		}
 	
-		$g = new grid();<br/>
+		$g = new grid();
 		
 		#set tablename<br/>
-		$g->set_table('tableame');<br/>
+		$g->set_table('tableame');
 		
-		#set primary key<br/>
-		$g->set_pk('id');<br/>
+		#set primary key
+		$g->set_pk('id');
 		
-		#set limit<br/>
-		$g->set_limit(5);	<br/>
+		#set limit
+		$g->set_limit(5);	
 				
-		#set columns of tale for select		<br/>
-		$g->set_select(array('id','name','date','text'));<br/>
+		#set columns of tale for select		
+		$g->set_select(array('id','name','date','text'));
 		
-		#set name of columns<br/>
-		$g->set_name('id','ID');<br/>
-		$g->set_name('date','Дата');<br/>
-		$g->set_name('name','Название');<br/>
-		$g->set_name('xxx','Произвольное поле');<br/>
+		#set name of columns
+		$g->set_name('id','ID');
+		$g->set_name('date','Date');
+		$g->set_name('name','Name');
+		$g->set_name('xxx','some fild');
 		
 		#set buttons<br/>
-		$g->set_button('/reg/','Редактировать');<br/>
-		$g->set_button('/del/','Удалить');<br/>
-		$g->set_button_function('mybutton','Моя кнопка');<br/>
+		$g->set_button('/reg/','Reg');
+		$g->set_button('/del/','Del');
+		$g->set_button_function('mybutton','My button');
 		
-		#set format for column id<br/>
-		$g->set_format('id','formatid');<br/>
+		#set format for column id
+		$g->set_format('id','formatid');
 		
 		#print result
 		$g->print_table();<br/>
