@@ -44,4 +44,4 @@ Define each column, row, format column.<br/>
 		$g->set_format('id','formatid');
 		
 		#print result
-		$g->print_table();<br/>
+		$g->print_table();
