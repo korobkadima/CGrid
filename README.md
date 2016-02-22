@@ -3,12 +3,13 @@ DataGrid is a simple presenter widget for database queries
 <br/>
 Display results in a HTML Table (defining each column)<br/>
 Define each column, row, format column.<br/>
-<br/><br/>
+
 <h2>Example</h2>
-<br/>
+
 		
-		require_once($_SERVER['DOCUMENT_ROOT'].'/grid.php'); 
-	
+		require_once('grid.php'); 
+		
+		#function for format
 		function formatid($id,$arr)
 		{
 			return 'ID:' . $id;
